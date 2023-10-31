@@ -1,0 +1,5 @@
+export { default as Header } from './Header'
+export { default as MainContent } from './MainContent'
+export { default as PlayerChoice } from './PlayerChoice'
+export { default as RootLayout } from './RootLayout'
+export { default as MainPage } from './MainPage'
