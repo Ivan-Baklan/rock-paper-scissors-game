@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import { RootLayout } from "./components";
-import MainPage from "./components/MainPage";
+import { GameContent, MainContent, RootLayout } from "./components";
+
+
 
 const routes = createBrowserRouter([
     {
@@ -9,7 +10,11 @@ const routes = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <MainPage />
+                element: <MainContent />
+            },
+            {
+                path: "singleplayer",
+                element: <GameContent />
             }
         ]
     },
