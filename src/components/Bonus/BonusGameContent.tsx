@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+
 import { Link } from "react-router-dom";
 import { BonusRulesPortal, ChoiceButton, DelayedComponent, GameSwitcher } from "../index";
 import { useAppDispatch, useAppSelector } from "../../hooks";
-import { clearChoices, makeComputerChoiceAsync, selectBonusGameChoice } from "../../store/features/bonusGameSlice";
+import { clearChoices, selectBonusGameChoice } from "../../store/features/bonusGameSlice";
 
 
 

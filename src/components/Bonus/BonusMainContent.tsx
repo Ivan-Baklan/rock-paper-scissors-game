@@ -9,7 +9,7 @@ export default function BonusMainContent() {
 
     useEffect(() => {
         dispatch(clearChoices())
-    }, [])
+    }, [dispatch])
     return (
         <div className="flex relative w-full h-full items-center justify-center ">
             <BonusPlayerChoice />
