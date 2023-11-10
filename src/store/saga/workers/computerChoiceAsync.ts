@@ -1,5 +1,5 @@
 import {put,delay}from 'redux-saga/effects'
-import randomComputerChoice from '../../../utils/randomComputerChoice'
+import {randomComputerChoice} from '../../../utils/randomComputerChoice'
 import { makeComputerChoice } from '../../features/simpleGameSlice'
 
 export default function* computerChoiceAsync(){
