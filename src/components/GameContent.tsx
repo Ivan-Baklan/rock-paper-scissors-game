@@ -15,7 +15,7 @@ export default function GameContent() {
 
     useEffect(() => {
         dispatch(makeComputerChoiceAsync())
-    }, [])
+    }, [dispatch])
 
 
     const roundResult = () => {
