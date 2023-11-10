@@ -29,6 +29,7 @@ module.exports = {
         "gradient-radial":
           "radial-gradient(circle at 50% -50%, var(--tw-gradient-from),var(--tw-gradient-stops))",
         "choice-triangle": "url('./assets/img/bg-triangle.svg')",
+        "choice-pentagon": "url('./assets/img/bg-pentagon.svg')",
         "icon-paper": "url('./assets/img/icon-paper.svg')",
         "icon-scissors": "url('./assets/img/icon-scissors.svg')",
         "icon-rock": "url('./assets/img/icon-rock.svg')",
@@ -50,10 +51,12 @@ module.exports = {
         "paper-shadow-inner": "inset 0 6px 0 #C1C1C1",
         "scissors-shadow-outer": "0 8px #C76C1B",
         "rock-shadow-outer": "0 8px #9F1834",
-        "spock-shadow-outer": "0 8px #9F1834",
-        "lizard-shadow-outer": "0 8px #9F1834",
-        "winner-shadow":
+        "spock-shadow-outer": "0 8px #5D38A7",
+        "lizard-shadow-outer": "0 8px #2C8EAA",
+        "big-winner-shadow":
           "0px 0px 0px 80px rgba(255,255,255,0.05),0px 0px 0px 160px rgba(255,255,255,0.05),0px 0px 0px 220px rgba(255,255,255,0.05)",
+        "small-winner-shadow":
+          "0px 0px 0px 20px rgba(255,255,255,0.05),0px 0px 0px 40px rgba(255,255,255,0.05),0px 0px 0px 60px rgba(255,255,255,0.05)",
       },
       animation: {
         "extend-width": "0.3s linear extend-width",

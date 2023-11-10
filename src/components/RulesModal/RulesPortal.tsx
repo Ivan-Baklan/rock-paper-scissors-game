@@ -14,7 +14,7 @@ export default function RulesPortal() {
             <button
                 type="button"
                 onClick={() => { dispatch(openRuleModule()) }}
-                className=" absolute md:bottom-6 md:right-6 md:px-8 md:py-4 md:tracking-widest xs:tracking-[0.3rem] xs:bottom-6 xs:py-3 xs:px-12 text-white  border-2 rounded-xl border-white ">RULES</button>
+                className=" absolute bottom-6 right-6 md:px-8 md:py-4 md:tracking-widest xs:tracking-[0.3rem]  xs:py-3 xs:px-12 text-white  border-2 rounded-xl border-white ">RULES</button>
 
             {isRuleOpen ? createPortal(<RulesContent />, rulesDiv) : <></>}
         </>

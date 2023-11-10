@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { GameContent, MainContent, RootLayout } from "./components";
+import { BonusGameContent, BonusMainContent, BonusRootLayout, GameContent, MainContent, RootLayout } from "./components";
 
 
 
@@ -15,9 +15,23 @@ const routes = createBrowserRouter([
             {
                 path: "singleplayer",
                 element: <GameContent />
-            }
+            },
         ]
     },
+    {
+        path: '/bonus',
+        element: <BonusRootLayout />,
+        children: [
+            {
+                index: true,
+                element: <BonusMainContent />
+            },
+            {
+                path: "singleplayer",
+                element: <BonusGameContent />
+            }
+        ]
+    }
 ])
 
 export default routes

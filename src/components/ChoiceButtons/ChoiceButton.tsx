@@ -23,7 +23,7 @@ export default function ChoiceButton({ variant, buttonClass = "", size, onClick,
         "paper": "  bg-paper-border-gradient rounded-full shadow-paper-shadow-outer",
         "scissors": " bg-scissors-border-gradient rounded-full shadow-scissors-shadow-outer",
         "rock": " bg-rock-border-gradient rounded-full shadow-rock-shadow-outer",
-        "spock": " bg-spoack-border-gradient rounded-full shadow-spock-shadow-outer",
+        "spock": " bg-spock-border-gradient rounded-full shadow-spock-shadow-outer",
         "lizard": " bg-lizard-border-gradient rounded-full shadow-lizard-shadow-outer",
         "null": ""
     }

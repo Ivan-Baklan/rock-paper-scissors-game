@@ -1,21 +1,18 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChoiceButton, DelayedComponent, GameSwitcher, RulesPortal } from ".";
-import { useAppDispatch, useAppSelector } from "../hooks";
-import { clearChoices, makeComputerChoiceAsync, selectGameChoice } from "../store/features/simpleGameSlice";
+import { BonusRulesPortal, ChoiceButton, DelayedComponent, GameSwitcher } from "../index";
+import { useAppDispatch, useAppSelector } from "../../hooks";
+import { clearChoices, makeComputerChoiceAsync, selectBonusGameChoice } from "../../store/features/bonusGameSlice";
 
 
 
-export default function GameContent() {
+export default function BonusGameContent() {
 
-    const { playerChoice, computerChoice, winner } = useAppSelector(selectGameChoice);
+    const { playerChoice, computerChoice, winner } = useAppSelector(selectBonusGameChoice);
 
     const dispatch = useAppDispatch()
 
-    useEffect(() => {
-        dispatch(makeComputerChoiceAsync())
-    }, [])
+
 
 
     const roundResult = () => {
@@ -67,8 +64,8 @@ export default function GameContent() {
                 </div>
 
             </div>
-            <RulesPortal />
-            <GameSwitcher to={'/bonus'} title="BONUS GAME" />
+            <BonusRulesPortal />
+            <GameSwitcher to={'/'} title="MAIN GAME" />
         </>
     )
 }
